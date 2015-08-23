@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Changemaker Schools Directory feature.
+ */
+
+include_once 'changemaker_schools_directory.features.inc';

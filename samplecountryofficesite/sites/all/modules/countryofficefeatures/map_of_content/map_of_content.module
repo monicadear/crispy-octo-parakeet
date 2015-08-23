@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Map of content feature.
+ */
+
+include_once 'map_of_content.features.inc';

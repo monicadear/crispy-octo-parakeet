@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Contact Office feature.
+ */
+
+include_once 'contact_office.features.inc';

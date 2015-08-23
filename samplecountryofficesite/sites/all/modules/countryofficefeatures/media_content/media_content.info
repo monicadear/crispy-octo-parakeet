@@ -1,0 +1,16 @@
+name = Media content
+description = media files such as video, etc.
+core = 7.x
+package = Features
+version = 7.x-1.1-beta1
+project = media_content
+dependencies[] = features
+dependencies[] = media
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_media_link
+features[field_instance][] = node-media-body
+features[field_instance][] = node-media-field_media_link
+features[node][] = media
+features_exclude[dependencies][fellows_directory] = fellows_directory
+mtime = 1420751480

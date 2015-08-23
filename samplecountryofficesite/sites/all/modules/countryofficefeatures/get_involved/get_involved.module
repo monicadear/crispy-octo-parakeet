@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Get Involved feature.
+ */
+
+include_once 'get_involved.features.inc';

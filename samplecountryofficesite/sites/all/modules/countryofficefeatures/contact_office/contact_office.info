@@ -1,0 +1,12 @@
+name = Contact Office
+description = Contact the country office
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = contact_office
+dependencies[] = block
+dependencies[] = context
+dependencies[] = ctools
+features[context][] = contact
+features[ctools][] = context:context:3
+features[features_api][] = api:2

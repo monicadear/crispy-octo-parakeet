@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Media content feature.
+ */
+
+include_once 'media_content.features.inc';

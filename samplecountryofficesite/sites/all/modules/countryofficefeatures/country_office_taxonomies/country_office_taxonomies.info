@@ -1,0 +1,13 @@
+name = Country office taxonomies
+description = taxonomies  categories
+core = 7.x
+package = Features
+version = 7.x-1.1-beta1
+project = country_office_taxonomies
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = changemaker_qualities
+features[taxonomy][] = portfolio_category
+features[taxonomy][] = tags
+mtime = 1421224494

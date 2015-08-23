@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Fellows Directory feature.
+ */
+
+include_once 'fellows_directory.features.inc';
