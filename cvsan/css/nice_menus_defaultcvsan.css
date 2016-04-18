@@ -1,0 +1,311 @@
+/* $Id: nice_menus_default.css,v 1.10 2010/10/09 16:58:04 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+ul.nice-menu, ul.nice-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #6D6370;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+ul.nice-menu li {
+	float: left;
+	/*background-color: #eee;*/
+  /* Additional overrides to deal with Garland theme. */
+	margin: 0 0 0 0.5em;
+	padding-left: 0;
+	background-image: none;
+}
+/* Overrides for Garland header. */
+#header-region ul.nice-menu li {
+	margin: 0;
+	/* Padding rules are needed to deal with Garland's header line-height. */
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;/*background: #eee;*/
+}
+ul.nice-menu a, ul.nice-menu a:link, ul.nice-menu a:visited {
+	padding: 0.5em 1em 0.5em 1em;
+	color: #6D6370;
+}
+ul.nice-menu a:active, ul.nice-menu a:hover {
+	padding: 0.5em 1em 0.5em 1em;
+	color: #FFF;
+}
+ul.nice-menu li.active-trail { color: #6D6370; }
+ul.nice-menu li ul li.active-trail { color: #6D6370; }
+ul.nice-menu ul, /* Repeat for Garland header. */
+#header-region ul.nice-menu ul {
+	top: 1em;
+	left: -1px;
+	margin: 0;
+}
+/* Override for Garland header. */
+#header-region ul.nice-menu ul { top: 1.8em; }
+ul.nice-menu ul li {
+	color: #000;
+	border: 1px solid #FFF;
+}
+ul.nice-menu ul li a, ul.nice-menu ul li a:link, ul.nice-menu ul li a:visited { color: #6D6370; }
+ul.nice-menu ul li a:active, ul.nice-menu ul li a:hover { color: #FFF; }
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+/* This is the default width of all vertical menus. */
+ul.nice-menu-right, ul.nice-menu-left, ul.nice-menu-right li, ul.nice-menu-left li { width: 12.5em; }
+/* VERTICAL menus where submenus pop RIGHT (default). */
+ul.nice-menu-right ul {
+	width: 12.5em;
+	left: 12.5em;
+	top: -1px;
+}
+ul.nice-menu-right ul ul {
+	width: 12.5em;
+	left: 12.5em;
+	top: -1px;
+}
+ul.nice-menu-right li.menuparent, ul.nice-menu-right li li.menuparent { background: #F8B472 url(arrow-right.png) right center no-repeat; }
+ul.nice-menu-right li.menuparent:hover, ul.nice-menu-right li li.menuparent:hover { background: #FFBD73 url(arrow-right.png) right center no-repeat; }
+/* VERTICAL menus where submenus pop LEFT. */
+ul.nice-menu-left li ul {
+	width: 12.5em;
+	left: -12.65em;
+	top: -1px;
+}
+ul.nice-menu-left li ul li ul {
+	width: 12.5em;
+	left: -12.65em;
+	top: -1px;
+}
+ul.nice-menu-left li.menuparent, ul.nice-menu-left li li.menuparent { background: #F8B472 url(arrow-left.png) left center no-repeat; }
+ul.nice-menu-left li.menuparent:hover, ul.nice-menu-left li li.menuparent:hover { background: #F8B472 url(arrow-left.png) left center no-repeat; }
+ul.nice-menu-left a, ul.nice-menu-left ul a { padding-left: 14px; }
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+	background: transparent;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: left;
+	font-size: 15px;
+	float: left;
+	width: 100%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	text-align: right;
+	z-index:999;
+}
+ul.nice-menu-down li {
+	float: none;
+	display: inline-block;
+	vertical-align: top;
+	/*background-color: #eee;*/
+  /* Additional overrides to deal with Garland theme. */
+	margin: 0;
+	padding: 0 16px 0 16px;
+	color: #FFF;
+	border-right: 1px solid #6D6370;
+}
+ul.nice-menu-down li li { border: 0; }
+ul.nice-menu-down ul {
+	left: 0.5em;
+	top: 1.5em;
+}
+ul.nice-menu-down ul li {
+	color: #FFF;
+	clear: both;
+}
+ul.nice-menu-down li ul li ul, /* Repeat for Garland header. */
+#header-region ul.nice-menu-down li ul li ul {
+	left: 7em;
+	top: 1.5em;
+	width: 100%;
+}
+ul.nice-menu-down ul li a { color: #333; }
+ul.nice-menu-down li.menuparent {
+	background-color: transparent;
+	border-right: 1px solid #6D6370;
+	color: #6D6370;
+	padding: 0 8px 0 8px;
+}
+ul.nice-menu-down li.menuparent:hover, ul.nice-menu-down li.over {
+	color: #6D6370;
+	padding: 0 8px 0 8px;
+}
+ul.nice-menu-down li li.menuparent { border: 1px solid #FFF; }
+ul.nice-menu-down li li.menuparent:hover, ul.nice-menu-down li li.over { border: 1px solid #FFF; }
+/******************************
+ Garland-specific CSS
+******************************/
+
+/**
+ * Global CSS for ALL menu types
+ */
+ul.nice-menu li {
+	margin: 0;
+	padding-left: 0; /* LTR */
+	background-image: none;
+}
+#header-region ul.nice-menu li {
+	margin: 0;
+	/* Padding rules are needed to deal with Garland's header line-height. */
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+	background: #F8B472;
+}
+#header-region ul.nice-menu ul {
+	top: 1em;
+	left: -1px; /* LTR */
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin-right: 0; /* LTR */
+}
+#header-region ul.nice-menu ul { top: 1.7em; }
+/* SPECIFIC MENU ITEMS */
+/* #14B1E6 light blue Who We Are */
+/* #96BC33 green Solid Waste */
+/* #015488 navy blue Wastewater */
+/* #F27120 orange FAQs */
+/* #006FAF blue contact */
+
+/* WHO WE ARE */
+ul.nice-menu-down li{
+	text-align:center;
+}
+ul.nice-menu-down li.menu-343 {
+	background-color: #14B1E6;
+}
+ul.nice-menu-down li.menu-344 {
+	background-color: #96BC33;
+}
+ul.nice-menu-down li.menu-345 {
+	background-color: #015488;
+}
+ul.nice-menu-down li.menu-346 {
+	background-color: #F27120;
+}
+ul.nice-menu-down li.menu-347, ul.nice-menu-down li.menu-2864 {
+	background-color: #006FAF;
+}
+ul#nice-menu-1 li {
+	padding: 0;
+	border: 0;
+}
+ul#nice-menu-1 li a, ul#nice-menu-1 li a:link, ul#nice-menu-1 li a:visited {
+	color: #FFF;
+	padding: 6px 20px;
+	text-decoration: none;
+}
+ul#nice-menu-1 li a:active, ul#nice-menu-1 li a:hover, ul#nice-menu-1 li a.active {
+	color: #FFF;
+}
+ul#nice-menu-1 ul {
+	width: 200px;
+	top:29px;
+	left: 0;
+	padding: 0;
+}
+ul#nice-menu-1 li ul li ul, ul#nice-menu-1 li ul li ul {
+	left: 200px;
+	top: 0;
+}
+ul#nice-menu-1 li ul li {
+	width: 100%;
+	padding: 0;
+	border-top: 1px solid #FFF;
+	text-align:left;
+}
+/* WHO WE ARE - light blue */
+ul#nice-menu-1 li.menu-343 ul li { background-color: #14B1E6; }
+ul#nice-menu-1 li.menu-343 ul li a:active, ul#nice-menu-1 li.menu-343 ul li a:hover {
+	color: #14B1E6;
+	background-color: #FFF;
+}
+/* SOLID WASTE - green */
+ul#nice-menu-1 li.menu-344 ul li { background-color: #96BC33; }
+ul#nice-menu-1 li.menu-344 ul li a:active, ul#nice-menu-1 li.menu-344 ul li a:hover {
+	color: #96BC33;
+	background-color: #FFF;
+}
+/* WASTEWATER - navy blue  */
+ul#nice-menu-1 li.menu-345 ul li { background-color: #015488; }
+ul#nice-menu-1 li.menu-345 ul li a:active, ul#nice-menu-1 li.menu-345 ul li a:hover {
+	color: #015488;
+	background-color: #FFF;
+}
+/* FAQ - orange  */
+ul#nice-menu-1 li.menu-346 ul li { background-color: #F27120; }
+ul#nice-menu-1 li.menu-346 ul li a:active, ul#nice-menu-1 li.menu-346 ul li a:hover {
+	color: #F27120;
+	background-color: #FFF;
+}
+/* CONTACT - blue  */
+ul#nice-menu-1 li.menu-347 ul li, ul#nice-menu-1 li.menu-2864 ul li { background-color: #006FAF; }
+ul#nice-menu-1 li.menu-347 ul li a:active, ul#nice-menu-1 li.menu-347 ul li a:hover, ul#nice-menu-1 li.menu-2864 ul li a:active, ul#nice-menu-1 li.menu-2864 ul li a:hover {
+	color: #006FAF;
+	background-color: #FFF;
+}
+ul#nice-menu-1 ul a, ul#nice-menu-1 ul a:active, ul#nice-menu-1 ul a:link, ul#nice-menu-1 ul a:visited {
+	color: #fff;
+	font-size: 12px;
+	padding: 8px 0 8px 22px;
+	display: block;
+	width: 100%;
+	border: 0;
+}
+ul#nice-menu-1 ul a:active, ul#nice-menu-1 ul a:hover {
+	color: #fff;
+	background-color: #14B1E6;
+}
+/* SOLID WASTE - green */
+ul#nice-menu-1 li.menu-344 ul a:active, ul#nice-menu-1 li.menu-344 ul a:hover {
+	color: #FFF;
+	background-color: #96BC33;
+}
+/* WASTEWATER - navy blue  */
+ul#nice-menu-1 li.menu-345 ul a:active, ul#nice-menu-1 li.menu-345 ul a:hover {
+	color: #FFF;
+	background-color: #015488;
+}
+/* FAQ - orange  */
+ul#nice-menu-1 li.menu-346 ul a:active, ul#nice-menu-1 li.menu-346 ul a:hover {
+	color: #FFF;
+	background-color: #F27120;
+}
+/* CONTACT - blue  */
+ul#nice-menu-1 li.menu-347 ul a:active, ul#nice-menu-1 li.menu-347 ul a:hover, ul#nice-menu-1 li.menu-2864 ul a:active, ul#nice-menu-1 li.menu-2864 ul a:hover {
+	color: #FFF;
+	background-color: #006FAF;
+}
+ul#nice-menu-1 ul ul li { border-right: 1px solid #CCC; }
+
+@media (max-width:1300px){
+ul#nice-menu-1 li.menu-2864 ul{
+	left:auto;
+	right:0px;
+}
+ul#nice-menu-1 li ul li ul, ul#nice-menu-1 li ul li ul{
+	left:auto;
+	right:200px;
+}
+ul#nice-menu-1 li a, ul#nice-menu-1 li a:link, ul#nice-menu-1 li a:visited{
+	padding:6px 12px;
+}
+}

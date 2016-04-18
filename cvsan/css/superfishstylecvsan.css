@@ -1,0 +1,290 @@
+/* $Id: superfishstylecvsan.css,v 1.10 2016/03/05 12:33:04 monicadear Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+
+/* SPECIFIC MENU ITEMS */
+/* #14B1E6 light blue Who We Are */
+/* #96BC33 green Solid Waste */
+/* #015488 navy blue Wastewater */
+/* #F27120 orange FAQs */
+/* #006FAF blue contact */
+
+#block-superfish-1 .sf-style-none {
+  float: right;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+#block-superfish-1 .sf-style-none.sf-navbar {
+  width: 100%;
+}
+#block-superfish-1 .sf-style-none ul {
+  padding-left: 0;
+}
+
+#block-superfish-1 .sf-style-none a,
+#block-superfish-1 .sf-style-none span.nolink {
+  color: #FFF;
+  padding: 0.75em 1em;
+}
+
+#block-superfish-1 .sf-style-none a.sf-with-ul,
+#block-superfish-1 .sf-style-none span.nolink.sf-with-ul {
+  padding-right: 2.25em;
+}
+#block-superfish-1 .sf-style-none.rtl a.sf-with-ul,
+#block-superfish-1 .sf-style-none.rtl span.nolink.sf-with-ul {
+  padding-left: 2.25em;
+  padding-right: 1em;
+}
+
+#block-superfish-1 .sf-style-none span.sf-description {
+  color: #0000ff;
+  display: block;
+  font-size: 0.833em;
+  line-height: 1.5;
+  margin: 5px 0 0 5px;
+  padding: 0;
+}
+
+#block-superfish-1 .sf-style-none.rtl span.sf-description {
+  margin: 5px 5px 0 0;
+}
+
+#block-superfish-1 .sf-style-none li,
+#block-superfish-1 .sf-style-none.sf-navbar {
+  margin: 0 2px;
+  padding-top: 3px;
+}
+
+/* WHO WE ARE */
+#block-superfish-1 .sf-style-none li#menu-343-1 {
+  background: #14B1E6;
+  padding: 0 5px 0 5px;
+}
+
+#block-superfish-1 .sf-style-none li#menu-343-1 li {
+  margin: -5px 0 0 0;
+  background: #14B1E6;
+}
+
+
+
+/* SOLID WASTE */
+#block-superfish-1 .sf-style-none li#menu-344-1 {
+  background: #96BC33;
+  padding: 0 5px 0 5px;
+}
+
+#block-superfish-1 .sf-style-none li#menu-344-1 li {
+  margin: -5px 0 0 0;
+  background: #96BC33;
+}
+
+
+/* WASTEWATER */
+#block-superfish-1 .sf-style-none li#menu-345-1 {
+  background: #015488;
+  padding: 0 5px 0 5px;
+}
+
+#block-superfish-1 .sf-style-none li#menu-345-1 li {
+  margin: -5px 0 0 0;
+  background: #015488;
+}
+
+
+
+/* FAQS */
+#block-superfish-1 .sf-style-none li#menu-346-1 {
+  background: #F27120;
+  padding: 0 5px 0 5px;
+}
+
+#block-superfish-1 .sf-style-none li#menu-346-1 li {
+  margin: -5px 0 0 0;
+  background: #F27120;
+}
+
+
+
+/* CONTACT */
+#block-superfish-1 .sf-style-none li#menu-2864-1 {
+  background: #006FAF;
+  padding: 0 5px 0 5px;
+}
+
+#block-superfish-1 .sf-style-none li#menu-2864-1 li {
+  margin: -5px 0 0 0;
+  background: #006FAF;
+}
+
+
+
+#block-superfish-1 .sf-style-none li li li {
+  margin: -5px 0 0 -10px;
+  background: #000;
+}
+
+/* WHO WE ARE  SUBMENU ROLLOVER */
+#block-superfish-1 .sf-style-none li#menu-343-1:hover,
+#block-superfish-1 .sf-style-none li#menu-343-1.sfHover,
+#block-superfish-1 .sf-style-none #menu-343-1 a:focus,
+#block-superfish-1 .sf-style-none #menu-343-1 a:hover,
+#block-superfish-1 .sf-style-none #menu-343-1 a:active,
+#block-superfish-1 .sf-style-none #menu-343-1 span.nolink:hover {
+  background: #14B1E6;
+  outline: 0;
+}
+
+/* SOLID WASTE  SUBMENU ROLLOVER */
+#block-superfish-1 .sf-style-none li#menu-344-1:hover,
+#block-superfish-1 .sf-style-none li#menu-344-1.sfHover,
+#block-superfish-1 .sf-style-none #menu-344-1 a:focus,
+#block-superfish-1 .sf-style-none #menu-344-1 a:hover,
+#block-superfish-1 .sf-style-none #menu-344-1 a:active,
+#block-superfish-1 .sf-style-none #menu-344-1 span.nolink:hover {
+  background: #96BC33;
+  outline: 0;
+}
+
+/* WASTEWATER  SUBMENU ROLLOVER */
+#block-superfish-1 .sf-style-none li#menu-345-1:hover,
+#block-superfish-1 .sf-style-none li#menu-345-1.sfHover,
+#block-superfish-1 .sf-style-none #menu-345-1 a:focus,
+#block-superfish-1 .sf-style-none #menu-345-1 a:hover,
+#block-superfish-1 .sf-style-none #menu-345-1 a:active,
+#block-superfish-1 .sf-style-none #menu-345-1 span.nolink:hover {
+  background: #015488;
+  outline: 0;
+}
+
+/* FAQS  SUBMENU ROLLOVER */
+#block-superfish-1 .sf-style-none li#menu-346-1:hover,
+#block-superfish-1 .sf-style-none li#menu-346-1.sfHover,
+#block-superfish-1 .sf-style-none #menu-346-1 a:focus,
+#block-superfish-1 .sf-style-none #menu-346-1 a:hover,
+#block-superfish-1 .sf-style-none #menu-346-1 a:active,
+#block-superfish-1 .sf-style-none #menu-346-1 span.nolink:hover {
+  background: #F27120;
+  outline: 0;
+}
+
+/* CONTACT US  SUBMENU ROLLOVER */
+#block-superfish-1 .sf-style-none li#menu-2864-1:hover,
+#block-superfish-1 .sf-style-none li#menu-2864-1.sfHover,
+#block-superfish-1 .sf-style-none #menu-2864-1 a:focus,
+#block-superfish-1 .sf-style-none #menu-2864-1 a:hover,
+#block-superfish-1 .sf-style-none #menu-2864-1 a:active,
+#block-superfish-1 .sf-style-none #menu-2864-1 span.nolink:hover {
+  background: #006FAF;
+  outline: 0;
+}
+
+
+
+
+#block-superfish-1 .sf-style-none li:hover > ul,
+#block-superfish-1 .sf-style-none li.sfHover > ul {
+  top: 30px;
+}
+#block-superfish-1 .sf-style-none .sf-sub-indicator {
+  background-image: url('../images/dropdown-arrows.png');
+}
+#block-superfish-1 div.sf-accordion-toggle.sf-style-none a {
+  background: #f0f0f0;
+  color: #0000ff;
+  padding: 1em;
+}
+#block-superfish-1 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li.sf-expanded {
+  background-color: #c0c0c0;
+}
+#block-superfish-1 div.sf-accordion-toggle.sf-style-none a.sf-expanded,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li.sf-expanded > a,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li.sf-expanded > span.nolink {
+  font-weight: bold;
+}
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li a.sf-accordion-button {
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 499;
+}
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li a,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li span.nolink {
+  padding-left: 2em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li li a,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li li span.nolink {
+  padding-left: 3em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li li li a,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li li li span.nolink {
+  padding-left: 4em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li li li li a,
+#block-superfish-1 .sf-menu.sf-style-none.sf-accordion li li li li li span.nolink {
+  padding-left: 5em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li a,
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li span.nolink {
+  padding-left: auto;
+  padding-right: 2em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li li a,
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li li span.nolink {
+  padding-left: auto;
+  padding-right: 3em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li li li a,
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 4em;
+}
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li li li li a,
+#block-superfish-1 .sf-menu.sf-style-none.rtl.sf-accordion li li li li li span.nolink {
+  padding-left: auto;
+  padding-right: 5em;
+}
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper ol,
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+  margin: 0;
+  padding: 0;
+}
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent,
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper span.nolink.menuparent {
+  font-weight: bold;
+}
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper {
+  background: #c0c0c0;
+}
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper li {
+  background: transparent;
+}
+#block-superfish-1 .sf-menu.sf-style-none ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  display: inline;
+  float: left;
+}
+#block-superfish-1 .sf-menu.sf-style-none.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+  float: right;
+}
+
+
+
+
+

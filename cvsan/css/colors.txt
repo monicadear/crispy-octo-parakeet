@@ -1,0 +1,5 @@
+#25B3E4 light blue
+#97BA3D light green
+#0A5586 dark blue
+#F0712E orange
+#1070AD blue

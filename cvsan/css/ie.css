@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* $Id: ie.css,v 1.2 2010/10/22 11:37:00 monicadear Exp $ */
+/**
+ * Drupal 6 cvsantheme - Created by Monica S. Flores
+ * For Internet Explorer 7 and under
+ */
+#header #sitename {
+	padding-bottom:1.5em;
+}
+ol {
+	list-style-position:inside;
+	margin-left:-1.3em;
+}
+ol ul li {
+	margin-left:1.5em;
+	padding:0;
+}
+.clearfix, .container {
+	display:inline-block;
+}
+* html .clearfix, * html .container {
+	height:1%;
+}
+hr {
+	margin:-8px auto 11px;
+}
+/* ADDED BY ANJALI */
+
+#contenttop {
+	background: #fff;
+}
+/* Rounded corners */
+/*#sidebar-left #block-block-1 .block,
+#sidebar-left #block-block-2 .block, 
+#sidebar-left #block-block-6 .block*/
+#block-block-1, #block-block-2, #block-block-6 {
+	width:221px;
+	background: transparent url(images/box.top.221.png) top left no-repeat;
+	padding:6px 0 0 0;
+	border:0;
+filter:-;
+}
+#sidebar-left #block-block-1 .block-inner, #sidebar-left #block-block-2 .block-inner, #sidebar-left #block-block-6 .block-inner {
+	width:213px;
+	background:transparent url(images/box.bot.221.png) bottom left no-repeat;
+	padding:0 4px 2px 4px;
+	border:0;
+}
+#sidebar-leftdashboard #block-block-9, #sidebar-leftdashboard #block-menu_block-2 {
+	width:140px;
+	background: transparent url(images/box.top.140.png) top left no-repeat;
+	padding:6px 0 0 0;
+	border:0;
+filter:-;
+}
+#sidebar-leftdashboard #block-block-9 .block-inner, #sidebar-leftdashboard #block-menu_block-2 .block-inner {
+	width:132px;
+	background:transparent url(images/box.bot.140.png) bottom left no-repeat;
+	padding:0 4px 2px 4px;
+	border:0;
+}
+#sidebar-right #block-views-all_announcements-block_1 .block, #sidebar-right #block-block-17 .block, #sidebar-right .block {
+	width:246px;
+	background: transparent url(images/box.top.246.png) top left no-repeat;
+	padding:6px 0 0 0;
+	border:0;
+filter:-;
+}
+#sidebar-right #block-views-all_announcements-block_1 .block-inner, #sidebar-right #block-block-17 .block-inner, #sidebar-right .block .block-inner {
+	width:238px;
+	background:transparent url(images/box.bot.246.png) bottom left no-repeat;
+	padding:0 4px 2px 4px;
+	border:0;
+}
+#block-views-all_announcements-block_1 .content {
+	margin: 0 auto;
+	height: 250px;
+	overflow-y: scroll;
+	padding: 0.25em 1em 0.25em 1em;
+	text-align: left;
+}
+#contentmiddleleft .block, #contentmiddleright .block {
+	width:242px;
+	background: transparent url(images/box.top.242.png) top left no-repeat;
+	padding:6px 0 0 0;
+	border:0;
+filter:-;
+}
+#contentmiddleleft .block .block-inner, #contentmiddleright .block .block-inner {
+	width:234px;
+	height: 230px;
+	background:transparent url(images/box.bot.242.png) bottom left no-repeat;
+	padding:0 4px 2px 4px;
+	border:0;
+}
+#contentbottomhome .block {
+	width:494px;
+	background: transparent url(images/box.top.494.png) top left no-repeat;
+	padding:6px 0 0 0;
+	border:0;
+filter:-;
+}
+#contentbottomhome .block .block-inner {
+	width:486px;
+	background:transparent url(images/box.bot.494.png) bottom left no-repeat;
+	padding:0 4px 2px 4px;
+	border:0;
+}
